@@ -73,7 +73,7 @@ Once this is done feel free to delete the "Put In Resources!" folder
         },
 	},	
 ```
-
+## If you use jim-consumable skip to #7.)
 5.) Insert into @qb-smallresources/server/consumables.lua
 ```lua
 ----------- / Cherry Poppers
@@ -130,5 +130,36 @@ end)
     ["cp-chocolateshake"] = math.random(40, 50),
     ["cp-vanillashake"] = math.random(40, 50),
     ["cp-strawberryshake"] = math.random(40, 50),
-
 ```
+
+-- This step is only done if using jim-consumables
+7.) Add the icecream-proppack that is inside 'Put Me In Resources!' the folder into your resources, remember to ensure it!
+```css
+ensure icecream-proppack
+```
+
+8.) Add this code to @jim-consumables>Consumables
+```lua
+		["cp-chocolateshake"] = { 	emote = "drink", 	canRun = false, 	time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(10,20), thirst = math.random(10,20), }},
+		["cp-vanillashake"] = { 	emote = "drink", 	canRun = false, 	time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(10,20), thirst = math.random(10,20), }},
+		["cp-strawberryshake"] = { 	emote = "drink", 	canRun = false, 	time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(10,20), thirst = math.random(10,20), }},
+		["cp-vanillacone"] = { 		emote = "vanillaicecream", 		canRun = false, 	time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(10,20), thirst = math.random(5,10), }},
+		["cp-strawberrycone"] = { 	emote = "strawberryicecream", 	canRun = false, 	time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(10,20), thirst = math.random(5,10), }},
+		["cp-chocolatecone"] = { 	emote = "chocolateicecream", 	canRun = false, 	time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(10,20), thirst = math.random(5,10), }},
+```
+
+9.) Add this code into @jim-consumables>Emotes
+```lua
+		-- Ice Cream Cones
+		["chocolateicecream"] = {"mp_player_inteat@burger", "mp_player_int_eat_burger_fp", "Chocolate Ice Cream", AnimationOptions =
+		{ Prop = 'prop_icecone_choco', PropBone = 18905, PropPlacement = {0.12, -0.02, 0.04, 300.0, 150.0},
+			EmoteLoop = true, EmoteMoving = true, }},
+		["vanillaicecream"] = {"mp_player_inteat@burger", "mp_player_int_eat_burger_fp", "Vanilla Ice Cream", AnimationOptions =
+		{ Prop = 'prop_icecone_white', PropBone = 18905, PropPlacement = {0.12, -0.02, 0.04, 300.0, 150.0},
+			EmoteLoop = true, EmoteMoving = true, }},
+		["strawberryicecream"] = {"mp_player_inteat@burger", "mp_player_int_eat_burger_fp", "Strawberry Ice Cream", AnimationOptions =
+		{ Prop = 'prop_icecone_strawberry', PropBone = 18905, PropPlacement = {0.12, -0.02, 0.04, 300.0, 150.0},
+			EmoteLoop = true, EmoteMoving = true, }},
+```
+
+## Thats it your done, enjoy!
