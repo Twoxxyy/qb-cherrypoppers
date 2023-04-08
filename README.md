@@ -132,7 +132,7 @@ end)
     ["cp-strawberryshake"] = math.random(40, 50),
 ```
 
--- This step is only done if using jim-consumables
+## This step is only done if using jim-consumables
 7.) Add the icecream-proppack that is inside 'Put Me In Resources!' the folder into your resources, remember to ensure it!
 ```css
 ensure icecream-proppack
