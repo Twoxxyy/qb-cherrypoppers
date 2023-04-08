@@ -143,23 +143,9 @@ ensure icecream-proppack
 		["cp-chocolateshake"] = { 	emote = "drink", 	canRun = false, 	time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(10,20), thirst = math.random(10,20), }},
 		["cp-vanillashake"] = { 	emote = "drink", 	canRun = false, 	time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(10,20), thirst = math.random(10,20), }},
 		["cp-strawberryshake"] = { 	emote = "drink", 	canRun = false, 	time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(10,20), thirst = math.random(10,20), }},
-		["cp-vanillacone"] = { 		emote = "vanillaicecream", 		canRun = false, 	time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(10,20), thirst = math.random(5,10), }},
-		["cp-strawberrycone"] = { 	emote = "strawberryicecream", 	canRun = false, 	time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(10,20), thirst = math.random(5,10), }},
-		["cp-chocolatecone"] = { 	emote = "chocolateicecream", 	canRun = false, 	time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(10,20), thirst = math.random(5,10), }},
-```
-
-9.) Add this code into @jim-consumables>Emotes
-```lua
-		-- Ice Cream Cones
-		["chocolateicecream"] = {"mp_player_inteat@burger", "mp_player_int_eat_burger_fp", "Chocolate Ice Cream", AnimationOptions =
-		{ Prop = 'prop_icecone_choco', PropBone = 18905, PropPlacement = {0.12, -0.02, 0.04, 300.0, 150.0},
-			EmoteLoop = true, EmoteMoving = true, }},
-		["vanillaicecream"] = {"mp_player_inteat@burger", "mp_player_int_eat_burger_fp", "Vanilla Ice Cream", AnimationOptions =
-		{ Prop = 'prop_icecone_white', PropBone = 18905, PropPlacement = {0.12, -0.02, 0.04, 300.0, 150.0},
-			EmoteLoop = true, EmoteMoving = true, }},
-		["strawberryicecream"] = {"mp_player_inteat@burger", "mp_player_int_eat_burger_fp", "Strawberry Ice Cream", AnimationOptions =
-		{ Prop = 'prop_icecone_strawberry', PropBone = 18905, PropPlacement = {0.12, -0.02, 0.04, 300.0, 150.0},
-			EmoteLoop = true, EmoteMoving = true, }},
+		["cp-vanillacone"] = { 		emote = "sandwich", canRun = false, 	time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(10,20), thirst = math.random(5,10), }},
+		["cp-strawberrycone"] = { 	emote = "sandwich", canRun = false, 	time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(10,20), thirst = math.random(5,10), }},
+		["cp-chocolatecone"] = { 	emote = "sandwich", canRun = false, 	time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(10,20), thirst = math.random(5,10), }},
 ```
 
 ## Thats it your done, enjoy!
