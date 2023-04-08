@@ -11,11 +11,11 @@ Config.GaragePed = {
 
 -- Change blip locations for a different MLO than Don's Ice Cream.
 Config.blips = {
-    title="City Hall", -- Name displayed with blip
-    colour=5, -- Color of the blip
-    id=419, -- You can see more id's here: https://docs.fivem.net/docs/game-references/blips/
+    title="Cherry Poppers", -- Name displayed with blip
+    colour=1, -- Color of the blip
+    id=89, -- You can see more id's here: https://docs.fivem.net/docs/game-references/blips/
     scale=0.65, -- Set the size of the blip
-    pos = vector3(-551.04, -191.71, 38.22) -- Set the location of the blip
+    pos = vector3(-466.51, -26.78, 45.76) -- Set the location of the blip
 }
 
 -- Set the spawn for the employee car
