@@ -17,6 +17,8 @@ qb-menu - https://github.com/qbcore-framework/qb-menu
 map - https://www.youtube.com/watch?v=TjWhEoEBh0c I dont think its available for purchase anymore so I included it in Put In Resources!
 
 Vehicle - https://www.gta5-mods.com/paintjobs/ice-cream-van-cherry-popper-ice-cream-company Made it from a replace to an add-on
+## IMPORTANT
+Rename script from 'qb-cherrypoppers-main' to just 'qb-cherrypoppers'!!!
 
 ## INSTALLATION:
 1.) Add the Vehicle and MLO thats in the "Put In Resources!" folder into your resources, dont forget to ensure them:
