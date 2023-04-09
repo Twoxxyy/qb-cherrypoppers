@@ -6,7 +6,7 @@ local onDuty = false
 Citizen.CreateThread(function()
     for _, garagePed in ipairs(Config.GaragePed) do
         exports['qb-target']:AddTargetModel(GetHashKey(garagePed.ped),
-        { options = { { type = 'client', event = 'garage:CherryPopperGarage', icon = 'fas fa-car', label = 'BurgerShot Garage', job = Config.Job, }, },
+        { options = { { type = 'client', event = 'garage:CherryPopperGarage', icon = 'fas fa-car', label = 'CherryPoppers Garage', job = Config.Job, }, },
             distance = 2.5
         })
     end
