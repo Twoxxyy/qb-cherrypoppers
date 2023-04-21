@@ -22,30 +22,6 @@ RegisterNetEvent('QBCore:Client:SetDuty', function(duty)
 	onDuty = duty
 end)
 
-local QBCore = exports['qb-core']:GetCoreObject()
-local isLoggedIn = false
-local PlayerJob = {}
-local onDuty = false
-
-RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
-    QBCore.Functions.GetPlayerData(function(PlayerData)
-        if PlayerData.job.onduty then
-            if PlayerData.job.name == Config.Job then
-                TriggerServerEvent('QBCore:ToggleDuty')
-            end
-        end
-    end)
-end)
-
-RegisterNetEvent('QBCore:Client:OnJobUpdate', function(JobInfo)
-    PlayerJob = JobInfo
-    onDuty = PlayerJob.onduty
-end)
-
-RegisterNetEvent('QBCore:Client:SetDuty', function(duty)
-	onDuty = duty
-end)
-
 Citizen.CreateThread(function()
     if not Config.blips then
         print("[ERROR] Config.blips is not defined.")
